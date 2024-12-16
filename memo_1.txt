@@ -1,0 +1,15 @@
+
+# 10.18
+-플러터 알츠윈 > 회사관리자 바꿀때 packet_module 커밋 ㄱㄱ
+-animatedbuilder >> listenableBuilder 사용하기
+-알츠윈 검사진행시 타이핑 있는거 모바일 로 진행시 validate쓰는 피드백 버그 어케할건지
+
+
+-research_syntax: 테스트 프로젝트 정리 dash, push
+-research_flutter: 플러터 리서치한 것 정리(flutter_test, flttermon)
+
+
+
+-플러터 팩토리, 싱글톤, 싱글톤과 전역변수 차이 
+-체크박스 + 텍스트 << 텍스트 클릭시에도 체크박스 토글되도록 커스텀 buildUICheckboxWithTitle
+
