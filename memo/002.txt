@@ -1,0 +1,41 @@
+await admin
+ADMINReq
+
+ 
+
+# admin/category/delete
+adminCategoryDelete
+ADMINReqCategoryDelete
+ADMINAckCategoryDelete
+
+-CategoryDetailScreen/CategoryInfoView 
+
+
+# admin/category/list
+adminCategoryList
+ADMINReqCategoryList
+ADMINAckCategoryList
+
+# admin/category/info
+adminCategoryInfo
+ADMINReqCategoryInfo
+ADMINAckCategoryInfo
+
+# admin/category/update
+adminCategoryUpdate
+ADMINReqCategoryUpdate
+ADMINAckCategoryUpdate
+
+# admin/category/video/add
+adminCategoryVideoAdd
+ADMINReqCategoryVideoAdd
+ADMINAckCategoryVideoAdd
+
+# admin/category/video/delete
+adminCategoryVideoDelete
+ADMINReqCategoryVideoDelete
+ADMINAckCategoryVideoDelete
+
+
+
+ 

@@ -3,6 +3,7 @@ import 'dart:math';
 void main() {
   final List<String> _list = _makeStringList();
   print(_list);
+  print(_makeNumber());
 }
 
 String _makeString(int length) {
