@@ -1,103 +1,24 @@
 void main() {
-  // final Map<String, List<int>> _map = <String, List<int>>{
-  //   'a': <int>[1],
-  // };
+  // 다형성
+  final num x = 13; // int로 생성됨. num type x
+  final num x2 = 15.2; // double로 생성됨. num type x
+  final int x3 = 14;
+  final double x4 = 9.4;
 
-  // print(_map['a']);
+  final num yy = x3 as num;
+  final int zz = x as int;
 
-  // _map['a']?.add(3);
-  // _map['a']?.add(3);
-  // _map['a']?.add(3);
-  // _map['a']?.add(3);
+  // final num aa = 11.0;
+  // final int bb = 33;
+  // final double cc = 14.5;
 
-  // print(_map['a']);
+  // final num _x = bb as num;
+  // final num _x2 = cc as num;
+
+  // final int _y = aa as int;
+  // final int _y2 = cc as int; //  not a subtype of type
+
+  // print(aa.runtimeType);
+  // final double _z = aa as double;
+  // final double _z2 = bb as double; //  not a subtype of type
 }
-
-Node{
-	children: {
-		a: Node{
-			children: {
-				1: Node{
-					children: {}, 
-					key: 1, 
-					parent: Node{
-						children: {...}, 
-						key: a, 
-						parent: Node{
-							children: {...}, 
-							key: /, 
-							parent: null
-						}
-					}
-				}, 
-			}, 
-			key: a, 
-			parent: Node{
-				children: {...}, 
-				key: /, 
-				parent: null
-			}
-		}, 
-		b: Node{
-			children: {
-				4: Node{
-					children: {}, 
-					key: 4, 
-					parent: Node{
-						children: {...}, 
-						key: b, 
-						parent: Node{
-							children: {...}, 
-							key: /, 
-							parent: null
-						}
-					}
-				}
-			}, 
-			key: b, 
-			parent: Node{
-				children: {...}, 
-				key: /, 
-				parent: null
-			}
-		}, 
-		d: Node{
-			children: {}, 
-			key: d, 
-			parent: Node{
-				children: {...}, 
-				key: /, 
-				parent: null
-			}
-		}
-	}, 
-	key: /, 
-	parent: null
-}
-
-#
-final TreeNode _treeSimple = TreeNode.root()
-    ..addAll(
-      <Node>[
-        TreeNode(key: 'a')
-          ..addAll(
-            <Node>[
-              TreeNode(key: '1'),
-              TreeNode(key: '2'),
-              TreeNode(key: '3'),
-            ],
-          ),
-        TreeNode(key: 'b')
-          ..addAll(
-            <Node>[
-              TreeNode(key: '4'),
-            ],
-          ),
-        TreeNode(key: 'd')
-          ..addAll(
-            <Node>[
-              //
-            ],
-          ),
-      ],
-    );

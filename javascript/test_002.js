@@ -1,22 +1,27 @@
-str = "asdfb";
-// const ss = str.split("");
-// console.log(ss);
+var str = "abc";
+const strList = str.split("");
+console.log("x:", strList);
 
-// for (let i = 0; i < ss.length; i++) {
-//   console.log(ss[i]);
+// for (let i = 0; i < strList.length; i++) {
+//   console.log(strList[i]);
 // }
 
-// console.log([...str]);
-// [...str].forEach((c) => console.log(c));
+console.log("x2:", [...str]);
+[...str].forEach((c) => console.log(c));
 
-// for (const element of str) {
-//   console.log(element);
-// }
+for (const element of str) {
+  console.log(element);
+}
 
-var student = {
-  name: "Lee",
-  score: 90,
-};
+for (const key in str) {
+  console.log(key);
+}
 
-console.dir(student);
-console.log(student);
+//
+// var student = {
+//   name: "Lee",
+//   score: 90,
+// };
+
+// console.dir(student);
+// console.log(student);
