@@ -21,4 +21,7 @@ void main() {
   // print(aa.runtimeType);
   // final double _z = aa as double;
   // final double _z2 = bb as double; //  not a subtype of type
+
+  print(DateTime.now().toString());
+  print(DateTime.now().toString().substring(11, 16));
 }

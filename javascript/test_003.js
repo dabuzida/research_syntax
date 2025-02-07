@@ -1,10 +1,10 @@
-var result = "";
+var _result = "";
 var str1 = "wxyz";
 var str2 = "pqrs";
 
 for (let i = 0; i < str1.length; i++) {
-  result += str1[i];
-  result += str2[i];
+  _result += str1[i];
+  _result += str2[i];
 }
 
 // console.log(result);
@@ -12,8 +12,8 @@ for (let i = 0; i < str1.length; i++) {
 [...str1].map((x, idx) => x + str2[idx]).join("");
 
 var list = ["a", "b", "c"];
-var result = list.reduce((x, y) => x + y);
-console.log(result);
+var _result = list.reduce((x, y) => x + y);
+console.log(_result);
 
 function solution(my_string, k) {
   var answer = "";
@@ -26,7 +26,7 @@ function solution(my_string, k) {
 var list2 = [1, 2, 3, 4, 5];
 
 // console.log(Number("05505"));
-console.log(list2.sort((_) => -1));
+console.log(list2.sort((x, y) => -1));
 
 // 6 423
 
