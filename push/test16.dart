@@ -2,10 +2,13 @@ import 'dart:math';
 
 void main() {
   // _makeOffsiteScore_and_invalid_Date();
-  _makeOffsiteScore_and_valid_Date();
+  // _makeOffsiteScore_and_valid_Date();
 
   // String text = '[123]';
   // print(text.substring(1, text.length - 1));
+
+  print(DateTime.now().toString());
+  print(DateTime.now().toString().substring(5, 19));
 }
 
 void _makeOffsiteScore_and_invalid_Date() {
