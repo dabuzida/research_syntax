@@ -1,24 +1,22 @@
-// set, list 2개 구하고 set에서 한개를 빼서 list에 몇개있는지 확인
+function Counter() {
+  // 카운트를 유지하기 위한 자유 변수
+  var counter = 0; // 변수
+  this.counter2 = 1; // 함수 Counter에 바인딩된 프로퍼티
 
-// var ss = new Set([1, 2, 3]);
-// console.log(ss);
-// var q = ss.values();
-// var e = Array.from(ss);
-// var d = ss.entries();
-// console.log(e);
-// console.log(q);
-// console.log(d);
+  // 클로저
+  this.increase = function () {
+    return ++counter;
+  };
 
-var ss = { 1: 1001, asdf: 3, gw4g: 23, t24saf: 333 };
-console.log(ss.size);
-// console.log(ss.get(1));
+  // 클로저
+  this.decrease = function () {
+    return --counter;
+  };
+}
 
-// console.log(ss["asdf"]);
-console.log(Boolean(0));
+const my_counter = new Counter();
 
-// 4개주사위
-// -한종류: 1111*p
-// -2종류 3개동일p 1개다름q: (10p + q)^2
-// -2종류 2개씩 같음: (p+q) * |p-q|
-// -3종류 2개 같고p 서로 다른 2개q,r: q*r
-// -4종류. p>q>r>s 면  s
+console.log(my_counter.increase()); // 1
+console.log(my_counter.decrease()); // 0
+console.log(my_counter.counter); // 프로퍼티가 아니라 접근 불가
+console.log(my_counter.counter2); //
