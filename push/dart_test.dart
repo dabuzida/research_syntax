@@ -21,10 +21,42 @@ void main() {
   // sleep(Duration(seconds: 4));
   // print(y);
 
-  final DateTime x = DateTime(2022, 3, 11);
-  final DateTime y = DateTime.now();
-  print(x);
-  print(y);
+  // List<String> ww = <String>['x', 'y', 'asdfdsfz:hide'];
+  // for (final String element in ww) {
+  //   print('------------');
+  //   print(element.contains(':hide'));
+  //   print(element.split(':'));
+  //   print(element.split(':hide'));
+  //   print(element.split(':hide').first);
+  //   print(element.indexOf(':hide'));
+  // }
+
+////////////////////////////////////
+  // final List<String> ww = <String>['m', 'p', 's', 'k', 'a', 'b', 'c', 'd'];
+
+  // print(ww);
+  // print('z'.compareTo('a'));
+  // print('a'.compareTo('z'));
+  // ww.sort(
+  //   (String a, String b) {
+  //     if (a == 'k') {
+  //       return -1;
+  //     }
+
+  //     if (b == 'k') {
+  //       return 1;
+  //     }
+  //     return 0;
+  //   },
+  // );
+
+  // print(ww);
+
+  final parts = <String>['shoulders', 'knees', 'toes'];
+// Note: 'head' has already been removed.
+  final retVal = parts.remove('head'); // false
+  print(retVal); // [shoulders, knees, toes]
+  print(parts); // [shoulders, knees, toes]
 }
 
 Future<int> aa() {

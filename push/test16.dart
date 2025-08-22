@@ -7,8 +7,22 @@ void main() {
   // String text = '[123]';
   // print(text.substring(1, text.length - 1));
 
-  print(DateTime.now().toString());
-  print(DateTime.now().toString().substring(5, 19));
+  // print(DateTime.now().toString());
+  // print(DateTime.now().toString().substring(5, 19));
+
+  final DateTime now = DateTime.now();
+  final DateTime thisMonth = DateTime(now.year, now.month);
+  final DateTime nextMonth = DateTime(now.year, now.month + 1);
+
+  final int unixTimeHead = thisMonth.millisecondsSinceEpoch;
+  final int unixTimeTail = nextMonth.millisecondsSinceEpoch - 1;
+  final int z = 24 * 3600 * 1000;
+  print(unixTimeHead);
+  print(unixTimeTail);
+  print(DateTime.fromMillisecondsSinceEpoch(unixTimeHead));
+  print(DateTime.fromMillisecondsSinceEpoch(unixTimeTail));
+  print(DateTime.fromMillisecondsSinceEpoch(1735689600000));
+  print(DateTime.fromMillisecondsSinceEpoch(1733011200000));
 }
 
 void _makeOffsiteScore_and_invalid_Date() {

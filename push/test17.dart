@@ -76,20 +76,25 @@ void main() {
   // People? cc;
   // print(aa.hashCode);
   // print(bb.hashCode);
+
   // aa.name = '234tagr';
 
   // int? dd;
   // print(cc.hashCode);
   // print(dd.hashCode);
 
-  final List<String> ww = 'bogunso/manager/xxx/aaa'.split('/');
-  // print(ww);
+  // print(int.tryParse(''));
 
-  final w = 1.hashCode;
-  final e = w - 11600;
-  print(w);
-  print(e.hashCode);
-  print(1.hashCode);
+// yyyy-MM-dd HH:mm
+  final DateTime dateTime = DateTime.parse('2021-07-08');
+  final DateTime dateTime2 = DateTime(2025, 5, 11);
+  final DateTime dateTime3 = DateTime.parse('2025-11-23 11:33');
+  final DateTime dateTime4 = DateTime.parse('2025-11-23 23:33');
+  // final DateTime dateTime = DateTime.parse('2021-07-08T08:21:14Z');
+  print(dateTime);
+  print(dateTime2);
+  print(dateTime3);
+  print(dateTime4);
 }
 
 class People {
@@ -107,4 +112,14 @@ class People {
 
 String makeString(int length) {
   return List<String>.generate(length, (_) => 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890'[Random().nextInt('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890'.length)]).join();
+}
+
+enum Type {
+  fire(name: 'invalid'),
+  ice(name: 'invalid'),
+  ;
+
+  const Type({required this.name});
+
+  final String name;
 }
