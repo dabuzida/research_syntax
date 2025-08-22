@@ -1,35 +1,37 @@
-console.log(solution("baconlettucetomato"));
-// console.log(Array.from("baconlettucetomato"));
+let list = ["a", "bc", "d", "efg", "hi"];
+let x = {};
+console.log(x);
 
-// console.log(solution("cabab"));
-function solution(myStr) {
-  // a, b, c로 split
-  // 비면 ["EMPTY"] 리턴
-  // [''] 이런거 없게
-  // let list = [];
-  // let result = Array.from(myStr).reduce(function (prev, curr, i, array) {
-  //   if(i ==0){
-
-  //   }
-
-  // },0);
-
-  // return result.length == 0 ? ["EMPTY"] : result;
-
-  // ===============================================
-  let xx = Array.from(myStr)
-    .map(function (v) {
-      if (v == "a" || v == "b" || v == "c") {
-        return " ";
-      }
-      return v;
-    })
-    .join("")
-    .split(" ")
-    .filter((v) => v.length > 0);
-
-  return xx.length == 0 ? ["EMPTY"] : xx;
+for (const element of list) {
+  // console.log(element);
+  let value = x[element.length];
+  if (value == undefined) {
+    x[element.length] = 1;
+  } else {
+    x[element.length] = value + 1;
+  }
 }
+
+let z = list.reduce((prev, curr) => {
+  let value = prev[curr.length];
+  if (value == undefined) {
+    prev[curr.length] = 1;
+  } else {
+    prev[curr.length] = value + 1;
+  }
+
+  return prev;
+}, {});
+
+let max = 0;
+for (const element in z) {
+  if (max < z[element]) {
+    max = z[element];
+  }
+}
+
+console.log(max);
+// console.log(Math.max(...x));
 
 // console.log(
 //   ["a", "b"].map(function (v) {

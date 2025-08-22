@@ -2,6 +2,7 @@
  
 int main()
 {
+    // cd .. 상위폴더 이동
     int x = 1131;
     int *y = &x;
 

@@ -37,16 +37,17 @@ function solution2(arr) {
   return arr.reduce((prev, curr) => [...prev, ...Array(curr).fill(curr)], []);
 }
 
-//
-console.log(solution([3, 2, 4, 1, 3], [true, false, true, false, false]));
-function solution(arr, flag) {
+let aaa = solution([49, 12, 100, 276, 33], 27);
+function solution(arr, n) {
   var answer = [];
-
-  flag.reduce(function (prev, curr, i) {
-    if (curr) {
-      return [...prev, ...Array(arr[i] * 2).fill(arr[i])];
-    }
-    return prev;
-  }, []);
-  return answer;
+  return arr.map((v, i) => (i % 2 == 0 ? v + n : v));
 }
+console.log(aaa);
+// console.log(Array(3 * 2).fill(3));
+let zx = [12, 4, 15, 46, 38, 1, 14];
+zx.sort((a, b) => a - b);
+console.log(Array.from("0140141").reduce((prev, curr) => prev + curr, 0));
+parseInt("1234");
+
+console.log(+"18446744073709551615");
+console.log(Number("287346502836570928366"));
