@@ -23,5 +23,5 @@ int main()
     // printf("input number: ");
     // scanf("%d", &x);
     // printf("value: %d\n", x);
-
+    return 0;
 }

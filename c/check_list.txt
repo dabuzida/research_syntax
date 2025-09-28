@@ -1,0 +1,3 @@
+# c compiler check command
+gcc --version
+gcc -v

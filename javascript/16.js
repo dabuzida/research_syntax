@@ -51,3 +51,4 @@ parseInt("1234");
 
 console.log(+"18446744073709551615");
 console.log(Number("287346502836570928366"));
+console.log(BigInt("287346502836570928366"));
